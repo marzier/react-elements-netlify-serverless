@@ -45,7 +45,7 @@ const CartSummary = () => {
       {/* This is where we'll render our cart */}
       <p>Number of Items: {cartCount}</p>
       <p>Subtotal: {formattedTotalPrice}</p>
-      <p>Shipping: {formatCurrencyString({ value: 350, currency: 'USD' })}</p>
+      <p>Shipping: {formatCurrencyString({ value: 55, currency: 'USD' })}</p>
       <p>
         Total:{' '}
         {formatCurrencyString({

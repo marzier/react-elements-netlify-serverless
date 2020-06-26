@@ -31,7 +31,7 @@ exports.handler = async (event) => {
     const line_items = validateCartItems(inventory, cartItems);
     const amount = line_items.reduce(
       (sum, { amount, quantity }) => sum + amount * quantity,
-      350 // Shipping fee
+      50 // Shipping fee
     );
 
     const paymentIntent = await stripe.paymentIntents.create({
